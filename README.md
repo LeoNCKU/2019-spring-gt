@@ -13,8 +13,10 @@ To Run The Code:
 	Step3: 
 			change your "file_name".txt in line 462.
 			
+	Step4:
+			execute make clean && make all && ./main.out command in linux.
 
-
+			
 
 
 
