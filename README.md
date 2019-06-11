@@ -1,6 +1,9 @@
 # Chinese-Post-Man
 National Cheng Kung University - Graph Theory Project1
 
+
+
+
 To Run The Code:
 	
 	Step1:
@@ -15,6 +18,8 @@ To Run The Code:
 			
 	Step4:
 			execute make clean && make all && ./main.out command in linux.
+			
+			we have 5 txt file e.g test_book, topo, cycle, house, 7bridge.
 
 			
 Solution:
