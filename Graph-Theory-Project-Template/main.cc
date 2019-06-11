@@ -12,7 +12,7 @@
 #include "Add_Pathes.h"
 #include <algorithm>  
 #include <bits/stdc++.h> 
-#define V 6
+#define V 20
 
 using namespace std;
 
@@ -167,6 +167,11 @@ vector<OBJ>Finding_the_Additional_Paths(vector<string> positive,vector<string> n
 		if(Matrix_Edge->head->name=="i") row=8;
 		if(Matrix_Edge->head->name=="j") row=9;
 		if(Matrix_Edge->head->name=="k") row=10;
+		if(Matrix_Edge->head->name=="l") row=11;
+		if(Matrix_Edge->head->name=="m") row=12;
+		if(Matrix_Edge->head->name=="n") row=13;
+		if(Matrix_Edge->head->name=="o") row=14;
+		if(Matrix_Edge->head->name=="9") row=15;
 		if(Matrix_Edge->tail->name=="a") col=0;
 		if(Matrix_Edge->tail->name=="b") col=1;
 		if(Matrix_Edge->tail->name=="c") col=2;
@@ -178,6 +183,11 @@ vector<OBJ>Finding_the_Additional_Paths(vector<string> positive,vector<string> n
 		if(Matrix_Edge->tail->name=="i") col=8;
 		if(Matrix_Edge->tail->name=="j") col=9;
 		if(Matrix_Edge->tail->name=="k") col=10;
+		if(Matrix_Edge->head->name=="l") col=11;
+		if(Matrix_Edge->head->name=="m") col=12;
+		if(Matrix_Edge->head->name=="n") col=13;
+		if(Matrix_Edge->head->name=="o") col=14;
+		if(Matrix_Edge->head->name=="9") col=15;
 		
 		graph[row][col]=Matrix_Edge->flowval;
 		Matrix_Edge= Matrix_Edge->next;
@@ -215,6 +225,11 @@ vector<OBJ>Finding_the_Additional_Paths(vector<string> positive,vector<string> n
 			if(pair[i][j].Negative=="i") N_Dijkstra=8;
 			if(pair[i][j].Negative=="j") N_Dijkstra=9;
 			if(pair[i][j].Negative=="k") N_Dijkstra=10;
+			if(pair[i][j].Negative=="l") N_Dijkstra=11;
+			if(pair[i][j].Negative=="m") N_Dijkstra=12;
+			if(pair[i][j].Negative=="n") N_Dijkstra=13;
+			if(pair[i][j].Negative=="o") N_Dijkstra=14;
+			if(pair[i][j].Negative=="p") N_Dijkstra=15;
 			if(pair[i][j].Positive=="a") P_Dijkstra=0;
 			if(pair[i][j].Positive=="b") P_Dijkstra=1;
 			if(pair[i][j].Positive=="c") P_Dijkstra=2;
@@ -226,6 +241,11 @@ vector<OBJ>Finding_the_Additional_Paths(vector<string> positive,vector<string> n
 			if(pair[i][j].Positive=="i") P_Dijkstra=8;
 			if(pair[i][j].Positive=="j") P_Dijkstra=9;
 			if(pair[i][j].Positive=="k") P_Dijkstra=10;
+			if(pair[i][j].Positive=="l") P_Dijkstra=11;
+			if(pair[i][j].Positive=="m") P_Dijkstra=12;
+			if(pair[i][j].Positive=="n") P_Dijkstra=13;
+			if(pair[i][j].Positive=="o") P_Dijkstra=14;
+			if(pair[i][j].Positive=="p") P_Dijkstra=15;
 			pair[i][j].Additional_Paths=dijkstra(graph,N_Dijkstra,P_Dijkstra);
 		}
 	}
@@ -336,6 +356,11 @@ cout<<"Path :"<<endl;
 		if(circuit[i]==8)  cout<<"i";
 		if(circuit[i]==9)  cout<<"j";
 		if(circuit[i]==10) cout<<"k";
+		if(circuit[i]==11) cout<<"l";
+		if(circuit[i]==12) cout<<"m";
+		if(circuit[i]==13) cout<<"n";
+		if(circuit[i]==14) cout<<"o";
+		if(circuit[i]==15) cout<<"p";
         if (i) 
            cout<<" -> "; 
     }
@@ -425,6 +450,11 @@ void Find_Path(vector<OBJ>pairs_results){
 		if(traversal->head->name=="i") row=8;
 		if(traversal->head->name=="j") row=9;
 		if(traversal->head->name=="k") row=10;
+		if(traversal->head->name=="l") row=11;
+		if(traversal->head->name=="m") row=12;
+		if(traversal->head->name=="n") row=13;
+		if(traversal->head->name=="o") row=14;
+		if(traversal->head->name=="p") row=15;
 		if(traversal->tail->name=="a") col=0;
 		if(traversal->tail->name=="b") col=1;
 		if(traversal->tail->name=="c") col=2;
@@ -436,6 +466,11 @@ void Find_Path(vector<OBJ>pairs_results){
 		if(traversal->tail->name=="i") col=8;
 		if(traversal->tail->name=="j") col=9;
 		if(traversal->tail->name=="k") col=10;
+		if(traversal->tail->name=="l") col=11;
+		if(traversal->tail->name=="m") col=12;
+		if(traversal->tail->name=="n") col=13;
+		if(traversal->tail->name=="o") col=14;
+		if(traversal->tail->name=="p") col=15;
 		adj[row].push_back(col);
         traversal=traversal->next;
     }
@@ -459,7 +494,7 @@ void Find_Path(vector<OBJ>pairs_results){
 int main(int argc, char** argv){
 
 // read from file
-    nm->interpret("topo.txt");
+    nm->interpret("house.txt");
 
 /*     1.Degreed()      */
 /*	   2.Find_Imbalanced_Nodes() */
