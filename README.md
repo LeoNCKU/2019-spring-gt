@@ -17,7 +17,8 @@ To Run The Code:
 			execute make clean && make all && ./main.out command in linux.
 
 			
-
+Solution:
+	it will cout Path and Totoal Distance.
 
 
 
