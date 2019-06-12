@@ -11,7 +11,7 @@ To Run The Code:
 	
 			
 	Step2: 
-			change your "file_name".txt in line 462.
+			change your "file_name.txt" in line 462.
 			
 	Step3:
 			execute make clean && make all && ./main.out command in linux.
