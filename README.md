@@ -7,7 +7,7 @@ National Cheng Kung University - Graph Theory Project1
 To Run The Code:
 	
 	Step1:
-			you should upload your topo.txt to /Graph-Theory-Project-Template/ dictionary
+			you should upload your topo.txt to 2019-spring-gt/Graph-Theory-Project-Template/ dictionary
 	
 			
 	Step2: 
@@ -16,12 +16,14 @@ To Run The Code:
 	Step3:
 			execute make clean && make all && ./main.out command in linux.
 			
-			we have 5 txt file e.g test_book, topo, cycle, house, 7bridge.
-
+			we have 5 txt file in Demo(file) e.g test_book, topo, cycle, house, 7bridge.
+			
 			
 Solution:
 
-	it will cout Path and Totoal Distance.
+	It will cout Path and Totoal Distance.
+	
+	It will output a txt file named "Solution.txt" in current dictionary.
 
 
 
