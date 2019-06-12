@@ -9,14 +9,11 @@ To Run The Code:
 	Step1:
 			you should upload your topo.txt to /Graph-Theory-Project-Template/ dictionary
 	
-	Step2:
-			change the argument of vertexs in line 15.
-			if number of vertexs is 5 then you have to define V to 5.
 			
-	Step3: 
+	Step2: 
 			change your "file_name".txt in line 462.
 			
-	Step4:
+	Step3:
 			execute make clean && make all && ./main.out command in linux.
 			
 			we have 5 txt file e.g test_book, topo, cycle, house, 7bridge.
